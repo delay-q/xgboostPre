@@ -70,15 +70,3 @@ barplot(rep(1,times=10),col=mycolors,border=mycolors,axes=FALSE,
 
 # 显示预测图像
 image(pred, col = mycolors)
-
-source('MyConfusion-FW.R')
-A <- MyConfusion(as.factor(TestSets[,221]),as.factor(pre_xgb))
-#AA 平均精度
-#OA 总体精度
-#KP Kappa系数
-A$OA
-A$AA
-A$KP
-
-
-
